@@ -2,12 +2,12 @@ from django.contrib import admin
 from .models import Course, Lesson, Instructor, Learner, Question, Choice, Submission
 
 class ChoiceInline(admin.StackedInline):
-		model = Choice
-		extra = 2
+	model = Choice
+	extra = 2
 
-	class QuestionInline(admin.StackedInline):
-		model = Question
-		extra = 2
+class QuestionInline(admin.StackedInline):
+	model = Question
+	extra = 2
 
 
 class LessonInline(admin.StackedInline):
